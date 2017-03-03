@@ -157,7 +157,7 @@ a {
 }
 
 .hero h1 {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.1;
   padding-bottom: 20px;
 }
@@ -168,13 +168,13 @@ a {
 }
 
 .hero-subtitel p {
-  font-size: 0.4375em;
+  font-size: 0.9375em;
   opacity: .7;
   flex-grow: 2;
 }
 
 .hero-subtitel span {
-  font-size: 0.625em;
+  font-size: 0.925em;
   flex-grow: 1;
 }
 
@@ -190,7 +190,7 @@ a {
   align-items: center;
   background-color: #27212C;
   color: #72667D;
-  font-size: 0.4375em;
+  font-size: 0.7375em;
   padding-left: 25px;
   flex-grow: 2;
 }
@@ -251,13 +251,13 @@ a {
 
 .blaz-robar h2 {
   color: #198CA3;
-  font-size: 0.875em;
+  font-size: 1.575em;
   padding-bottom: 25px;
 }
 
 .paragraphs {
-  font-size: 0.625em;
-  line-height: 15px;
+  font-size: 1em;
+  line-height: 30px;
 }
 
 .blaz-robar-paragraph-hidden {
@@ -292,16 +292,16 @@ a {
   }
 
   .hero h1 {
-    font-size: 1.875em;
+    font-size: 2.575em;
     padding-bottom: 20px;
   }
 
   .hero-subtitel p {
-    font-size: 0.8125em;
+    font-size: 1.4125em;
   }
 
   .hero-subtitel span {
-    font-size: 1em;
+    font-size: 1.4125em;
   }
 
   .robin-hood {
@@ -309,7 +309,7 @@ a {
   }
 
   .robin-hood-paragraph {
-    font-size: 0.875em;
+    font-size: 1.1em;
     padding-left: 50px;
   }
 
@@ -335,7 +335,7 @@ a {
 
   .blaz-robar h2 {
     font-size: 1.375em;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
   }
 
   .paragraphs {
@@ -376,16 +376,16 @@ a {
   }
 
   .hero h1 {
-    font-size: 2.8125em;
+    font-size: 3.2125em;
     padding-bottom: 60px;
   }
 
   .hero-subtitel p {
-    font-size: 1.25em;
+    font-size: 1.85em;
   }
 
   .hero-subtitel span {
-    font-size: 1.6875em;
+    font-size: 2.1875em;
   }
 
   .robin-hood {
@@ -393,7 +393,7 @@ a {
   }
 
   .robin-hood-paragraph {
-    font-size: 1.375em;
+    font-size: 2.275em;
     padding-left: 80px;
   }
 
@@ -430,15 +430,15 @@ a {
   }
 
   .blaz-robar h2 {
-    font-size: 1.375em;
+    font-size: 1.675em;
     padding-bottom: 30px;
   }
 
   .paragraphs {
     display: flex;
     flex-direction: row;
-    font-size: 0.0625em;
-    line-height: 15px;
+    font-size: 1.0625em;
+    line-height: 205x;
   }
 
   .blaz-robar-paragraph-hidden {
@@ -455,15 +455,16 @@ a {
   }
 
   .hero h1 {
+    font-size: 4.2125em;
     padding-bottom: 70px;
   }
 
   .hero-subtitel p {
-    font-size: 1.25em;
+    font-size: 2.25em;
   }
 
   .hero-subtitel span {
-    font-size: 1.25em;
+    font-size: 2.25em;
   }
 
   .robin-hood {
@@ -471,7 +472,7 @@ a {
   }
 
   .robin-hood-paragraph {
-    font-size: 1.4375em;
+    font-size: 1.8375em;
     padding-left: 90px;
   }
 
@@ -508,15 +509,15 @@ a {
   }
 
   .blaz-robar h2 {
-    font-size: 1.375em;
+    font-size: 1.975em;
     padding-bottom: 30px;
   }
 
   .paragraphs {
     display: flex;
     flex-direction: row;
-    font-size: 0.0625em;
-    line-height: 15px;
+    font-size: 1.2625em;
+    line-height: 30px;
   }
 
   .blaz-robar-paragraph-hidden {
