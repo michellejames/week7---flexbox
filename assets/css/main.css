@@ -45,23 +45,25 @@ a {
 }
 
 .nav {
-	display: flex;
-	background-color: #383C3F;
-	color: #EBEBEB;
-  align-content: center;
-  height: 37px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  background-color: #373C3F;
+  color: #FFFFFF;
+  font-size: 0.625em;
+  height: 35px;
   padding-left: 20px;
 }
 
 .hamburger{
-  background:none;
+  height: 35px;
+  background: #373C3F;
   position:absolute;
-  top:0;
+  top:-10px;
   right:0;
   line-height:45px;
-  padding:5px 15px 0px 15px;
-  color:#EBEBEB;
+  padding-right: 10px;
+  color: #FFFFFF;
   border:0;
   font-size:1.4em;
   font-weight:bold;
@@ -72,23 +74,25 @@ a {
 .cross{
   background:none;
   position:absolute;
-  top:0px;
+  top:-10px;
   right:0;
-  padding:7px 15px 0px 15px;
-  color:#EBEBEB;
+  color:#FFFFFF;
   border:0;
   font-size:3em;
   line-height:65px;
+  padding-right: 10px;
   font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
 }
 .menu {
+  top: 5%;
+  left: -2%;
   z-index:1000000;
   font-weight: bold;
   font-size: 0.8em;
-  width:100%;
+  width:102%;
   background: #383C3F;
   position:absolute;
   text-align:center;
@@ -145,17 +149,17 @@ a {
 .hero {
   display: flex;
   flex-direction: column;
-  background-color: #1B96AC;
-  color: white;
+  background-color: #22A8BC;
+  color: #FFFFFF;
   height: 175px;
+  justify-content: center;
   padding-left: 25px;
 }
 
 .hero h1 {
-  padding-top: 58px;
-  padding-bottom: 15px;
-  font-size: 1.5em;
-  padding-right: 40px;
+  font-size: 1em;
+  line-height: 1.1;
+  padding-bottom: 20px;
 }
 
 .hero-subtitel {
@@ -163,20 +167,21 @@ a {
   flex-direction: row;
 }
 
-
-.hero p {
-  font-size: .7em;
+.hero-subtitel p {
+  font-size: 0.4375em;
   opacity: .7;
+  flex-grow: 2;
 }
 
-.hero span {
-  margin-left: 50%;
+.hero-subtitel span {
+  font-size: 0.625em;
+  flex-grow: 1;
 }
 
 .robin-hood {
   display: flex;
   flex-direction: row;
-  height: 76px;
+  height: 75px;
 }
 
 .robin-hood-paragraph {
@@ -184,10 +189,10 @@ a {
   flex-direction: row;
   align-items: center;
   background-color: #27212C;
-  color: #9B8BA9;
+  color: #72667D;
+  font-size: 0.4375em;
   padding-left: 25px;
-  font-size: .8em;
-  width: 76.5625%;
+  flex-grow: 2;
 }
 
 .robin-hood-paragraph p {
@@ -198,18 +203,18 @@ a {
 .robin-hood-span {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  background-color: #BA3683;
-  color: white;
-  font-size: 2em;
-  width: 23.4375%;
+  align-items: center;
+  background-color: #B93682;
+  color: #FFFFFF;
+  flex-grow: 1.5;
 }
 
-.robin-hood-paragraph span {
-  justify-content: center;
-  align-items: center;
-}
+/*.three-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
 
 .opening-tag {
   display: flex;
@@ -218,19 +223,19 @@ a {
   align-items: center;
   height: 275px;
   background-color: #5B1C9F;
-  color: white;
+  color: #FFFFFF;
 }
 
 .opening-tag span {
   justify-content: center;
   align-items: center;
-  font-size: 5em;
+  font-size: 1.875em;
 }
 
 .bridge figure, .woman figure {
   display: flex;
+  flex-direction: row;
   height: 275px;
-  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -238,27 +243,106 @@ a {
 
 .blaz-robar {
   display: flex;
-  height: 450px;
-  background-color: #EBEBEB;
-  padding-left: 40px;
   flex-direction: column;
+  background-color: #EBEBEB;
+  color: #727272;
+  padding: 35px;
 }
 
 .blaz-robar h2 {
   color: #198CA3;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  font-size: 1.8em;
+  font-size: 0.875em;
+  padding-bottom: 25px;
 }
 
-.blaz-robar .blaz-robar-paragraph-shown {
-  line-height: 1.5em;
+.paragraphs {
+  font-size: 0.625em;
+  line-height: 15px;
 }
 
-.blaz-robar .blaz-robar-paragraph-hidden {
+.blaz-robar-paragraph-hidden {
   display: none;
 }
 
+@media screen and (min-width: 640px) {
+
+  .nav {
+    font-size: 1.125em;
+    height: 75px;
+    padding-left: 40px;
+  }
+
+  .hamburger{
+    height: 75px;
+    top:-4px;
+  }
+
+  .cross{
+    height: 118px;
+    top:-4px;
+  }
+
+  .menu {
+    top: 11.9%;
+  }
+
+  .hero {
+    height: 350px;
+    padding-left: 50px;
+  }
+
+  .hero h1 {
+    font-size: 1.875em;
+    padding-bottom: 20px;
+  }
+
+  .hero-subtitel p {
+    font-size: 0.8125em;
+  }
+
+  .hero-subtitel span {
+    font-size: 1em;
+  }
+
+  .robin-hood {
+    height: 150px;
+  }
+
+  .robin-hood-paragraph {
+    font-size: 0.875em;
+    padding-left: 50px;
+  }
+
+  .robin-hood-span {
+    font-size: 1.5em;
+  }
+
+  .opening-tag {
+    height: 550px;
+  }
+
+  .opening-tag span {
+    font-size: 3.4375em;
+  }
+
+  .bridge figure, .woman figure {
+    height: 550px;
+  }
+
+  .blaz-robar {
+    padding: 75px;
+  }
+
+  .blaz-robar h2 {
+    font-size: 1.375em;
+    padding-bottom: 55px;
+  }
+
+  .paragraphs {
+    font-size: 1.0625em;
+    line-height: 25px;
+  }
+}
 
 @media screen and (min-width: 980px) {
 
@@ -286,122 +370,165 @@ a {
     padding-right: 30px;
   }
 
-  .hidden-nav ul li a {
-  }
-
   .hero {
-  display: flex;
-  flex-direction: column;
-  background-color: #1B96AC;
-  color: white;
-  height: 550px;
-  padding-left: 80px;
+    height: 550px;
+    padding-left: 80px;
   }
 
   .hero h1 {
-    padding-top: 190px;
-    padding-bottom: 50px;
-    font-size: 4em;
+    font-size: 2.8125em;
+    padding-bottom: 60px;
   }
 
-  .hero-subtitel {
+  .hero-subtitel p {
+    font-size: 1.25em;
+  }
+
+  .hero-subtitel span {
+    font-size: 1.6875em;
+  }
+
+  .robin-hood {
+    height: 235px;
+  }
+
+  .robin-hood-paragraph {
+    font-size: 1.375em;
+    padding-left: 80px;
+  }
+
+  .robin-hood-span {
+    font-size: 2.1875em;
+  }
+
+  .three-images {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
-  .hero p {
-    font-size: 2em;
-    opacity: .7;
-
+  .opening-tag {
+    width: 33.33%;
+    order: 3;
   }
 
-  .hero span {
-    font-size: 4em;
+  .opening-tag span {
+    font-size: 3.4375em;
+  }
+
+  .bridge {
+    width: 33.33%;
+  }
+
+  .woman {
+    width: 33.33%;
+    order: -1;
+  }
+
+  .blaz-robar {
+    padding: 75px;
+  }
+
+  .blaz-robar h2 {
+    font-size: 1.375em;
+    padding-bottom: 30px;
+  }
+
+  .paragraphs {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.0625em;
+    line-height: 15px;
+  }
+
+  .blaz-robar-paragraph-hidden {
+    display: flex;
+    padding-left: 40px;
+  }
 }
 
-.robin-hood {
-  display: flex;
-  flex-direction: row;
-  height: 235px;
-}
+@media screen and (min-width: 1024px) {
 
-.robin-hood-paragraph {
-  padding-left: 80px;
-  font-size: 2em;
-  width: 77.5510204081633%;
-}
+  .hero {
+    height: 580px;
+    padding-left: 82px;
+  }
 
-.robin-hood-span {
-  font-size: 4em;
-  width: 22.4489795918367%;
-}
+  .hero h1 {
+    padding-bottom: 70px;
+  }
 
-.three-images {
-  display: flex;
-  flex-direction: row;
-  height: 282px;
-  width:100%;
-}
+  .hero-subtitel p {
+    font-size: 1.25em;
+  }
 
-.bridge, .woman  {
-  width: 33.33%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
+  .hero-subtitel span {
+    font-size: 1.25em;
+  }
 
-.opening-tag {
-  align-items: center;
-  width: 33.33%;
-  background-color: #5B1C9F;
-  color: white;
-}
+  .robin-hood {
+    height: 245px;
+  }
 
-.opening-tag span {
-  justify-content: center;
-  align-items: center;
-  font-size: 5em;
-}
+  .robin-hood-paragraph {
+    font-size: 1.4375em;
+    padding-left: 90px;
+  }
 
+  .robin-hood-span {
+    font-size: 2.1875em;
+  }
 
+  .three-images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-.blaz-robar {
-  display: flex;
-  height: 450px;
-  background-color: #EBEBEB;
-  padding-left: 40px;
-  flex-direction: column;
-}
+  .opening-tag {
+    width: 33.33%;
+    order: -1;
+  }
 
-.blaz-robar h2 {
-  color: #198CA3;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  font-size: 1.8em;
-}
+  .opening-tag span {
+    font-size: 3.4375em;
+  }
 
-.paragraphs {
-  display: flex;
-  flex-direction: row;
+  .bridge {
+    width: 33.33%;
+  }
 
-}
+  .woman {
+    width: 33.33%;
+    order: 3;
+  }
 
-.blaz-robar .blaz-robar-paragraph-shown {
-  display: flex;
-  flex-direction: row;
-  line-height: 1.5em;
-  padding-right: 5%;
-}
+  .blaz-robar {
+    padding: 60px;
+  }
 
-.blaz-robar .blaz-robar-paragraph-hidden {
-  display: flex;
-  flex-direction: row;
-  line-height: 1.5em;
-  padding-right: 40px;
-}
+  .blaz-robar h2 {
+    font-size: 1.375em;
+    padding-bottom: 30px;
+  }
 
+  .paragraphs {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.0625em;
+    line-height: 15px;
+  }
 
-
+  .blaz-robar-paragraph-hidden {
+    display: flex;
+    padding-left: 40px;
+  }
 
 }
+
+
+
+
+
+
 
